@@ -1,0 +1,2460 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"bd_pizzeria stock1\",\"bd_pizzeria address\",\"bd_pizzeria customers\",\"bd_pizzeria vista_inicial\",\"bd_pizzeria ingredient\",\"bd_pizzeria inventory\",\"bd_pizzeria item\",\"bd_pizzeria orders\",\"bd_pizzeria recipe\",\"bd_pizzeria rota\",\"bd_pizzeria staff\",\"bd_pizzeria stock2\",\"bd_pizzeria shift\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.123.684.0 (23.11)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "es-ES",
+    "cultures": [
+      {
+        "name": "es-ES",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "e894e118-93c1-498f-9400-6ac31dabcf77",
+        "fromColumn": "created_at",
+        "fromTable": "bd_pizzeria vista_inicial",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_aae92810-ddeb-4e85-abab-708ff01881cd"
+      },
+      {
+        "name": "a96a0d45-b3d5-49be-8d1b-6e1e5478f7da",
+        "fromColumn": "created_at",
+        "fromTable": "bd_pizzeria orders",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_f06bcf9b-340f-490d-bf38-3b2504f06313"
+      },
+      {
+        "name": "5a268971-3e3b-4361-985a-05bb3631146a",
+        "fromColumn": "date",
+        "fromTable": "bd_pizzeria rota",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_2c9865a4-b45f-4d70-ab48-bafac7eaf8e4"
+      },
+      {
+        "name": "267c2ca8-d8e6-46a2-9064-97d1e0a38882",
+        "annotations": [
+          {
+            "name": "PBI_IsFromSource",
+            "value": "FS"
+          }
+        ],
+        "fromColumn": "add_id",
+        "fromTable": "bd_pizzeria orders",
+        "toColumn": "add_id",
+        "toTable": "bd_pizzeria address"
+      },
+      {
+        "name": "13e6f6bd-593b-4bad-b9bf-aedebf493eed",
+        "annotations": [
+          {
+            "name": "PBI_IsFromSource",
+            "value": "FS"
+          }
+        ],
+        "fromColumn": "cust_id",
+        "fromTable": "bd_pizzeria orders",
+        "toColumn": "cust_id",
+        "toTable": "bd_pizzeria customers"
+      },
+      {
+        "name": "34a8af0c-1d39-4fcc-bdc0-0f5fcb29b0b2",
+        "annotations": [
+          {
+            "name": "PBI_IsFromSource",
+            "value": "FS"
+          }
+        ],
+        "fromColumn": "item_id",
+        "fromTable": "bd_pizzeria orders",
+        "toColumn": "item_id",
+        "toTable": "bd_pizzeria item"
+      },
+      {
+        "name": "88a90cd7-c504-4417-a392-807c3ba5c587",
+        "annotations": [
+          {
+            "name": "PBI_IsFromSource",
+            "value": "FS"
+          }
+        ],
+        "fromColumn": "ing_id",
+        "fromTable": "bd_pizzeria recipe",
+        "toColumn": "ing_id",
+        "toTable": "bd_pizzeria ingredient"
+      },
+      {
+        "name": "014241a4-350a-455c-80a9-6ac558ae7732",
+        "annotations": [
+          {
+            "name": "PBI_IsFromSource",
+            "value": "FS"
+          }
+        ],
+        "fromColumn": "staff_id",
+        "fromTable": "bd_pizzeria rota",
+        "toColumn": "staff_id",
+        "toTable": "bd_pizzeria staff"
+      },
+      {
+        "name": "92373aaa-a027-4379-b3e3-4106db8b6962",
+        "annotations": [
+          {
+            "name": "PBI_IsFromSource",
+            "value": "FS"
+          }
+        ],
+        "fromColumn": "shift_id",
+        "fromTable": "bd_pizzeria rota",
+        "toColumn": "shift_id",
+        "toTable": "bd_pizzeria shift"
+      }
+    ],
+    "sourceQueryCulture": "es-PE",
+    "tables": [
+      {
+        "name": "bd_pizzeria stock1",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          }
+        ],
+        "columns": [
+          {
+            "name": "item_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e5bb6d6b-5232-49d0-8c23-567ea2197907",
+            "sourceColumn": "item_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "item_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1b3f6de9-cedc-457d-aa3c-5ab62dc07f44",
+            "sourceColumn": "item_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ing_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "08334e1e-1f70-4945-8621-ee9ba1e165fd",
+            "sourceColumn": "ing_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ing_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8454c125-65cb-4222-b328-be9401517a12",
+            "sourceColumn": "ing_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ing_weight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f8deb6e9-8c1a-4e82-a3b8-68b4b7c25093",
+            "sourceColumn": "ing_weight",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ing_price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "863af326-b728-4c69-8a8a-df9174142281",
+            "sourceColumn": "ing_price",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "order_quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "56143771-f599-4146-bbc9-a24500f6b808",
+            "sourceColumn": "order_quantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "recipe_quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2830249f-8613-4223-93fa-ceeb29169d83",
+            "sourceColumn": "recipe_quantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "recipe_quantity_total",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c5947b60-babb-4626-b657-4019f9efcc5e",
+            "sourceColumn": "recipe_quantity_total",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "unit_cost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "cb9b1abc-7f2a-4692-8e0a-393bdc70888f",
+            "sourceColumn": "unit_cost",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ingredient_cost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-PE\"}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "\"S/\"\\ #,0.00;-\"S/\"\\ #,0.00;\"S/\"\\ #,0.00",
+            "lineageTag": "4706c462-3fcd-42cf-823a-db5beac22756",
+            "sourceColumn": "ingredient_cost",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "d6e4325a-fab1-4a58-b975-4f680f3b5f1d",
+        "partitions": [
+          {
+            "name": "bd_pizzeria stock1",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_stock1 = Origen{[Schema=\"bd_pizzeria\",Item=\"stock1\"]}[Data]",
+                "in",
+                "    bd_pizzeria_stock1"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_80e16fe7-706b-4733-bc33-a30059039e7f",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "1f8a40e3-e664-4103-9bc5-a1ccc1a1d5d1",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "9cd0aa9a-54fc-4afe-a1ce-bc3c60b97761",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "34e9854b-2ebf-4684-9f4a-8023f8cb1bf8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "581b6698-ba99-4498-9af4-618eac60198b",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e36316a0-7eaa-4d1c-bac3-6325dbb237a5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "e52d7dff-e117-4ad8-bc65-295fda6c13da",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e718da49-d386-4059-97fc-bdeac084cc79",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "a3cc7fda-7811-419b-80e8-3c706ac42607",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "ae2882fe-700a-480a-9145-c6ee568ce148",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "93b751d5-27ec-4f7d-94d2-8d27baa7725e",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "5dd3d00d-0e91-4b16-a191-24446566731c",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "2f4cbf69-c3b7-4cc8-8b12-7ff0102e5d51"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "8bce3148-7b7a-4583-915c-9a57368592f7",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_80e16fe7-706b-4733-bc33-a30059039e7f",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "bd_pizzeria address",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "add_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "64239241-2335-401a-b1e1-76093b5258df",
+            "sourceColumn": "add_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "delivery_address1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "319d5950-9c4f-45fc-88a0-1976a6c5d78a",
+            "sourceColumn": "delivery_address1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "delivery_address2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "23daae19-d00d-4f3f-aa4c-deb4941f1566",
+            "sourceColumn": "delivery_address2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "delivery_city",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bb9800a1-1975-4609-acf9-6ce2d973fe1f",
+            "sourceColumn": "delivery_city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "delivery_zipcode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "22053fcc-5681-428a-bb7f-23b01eb14449",
+            "sourceColumn": "delivery_zipcode",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "a0a9bb04-0c5f-4423-af6d-b27e072127c4",
+        "partitions": [
+          {
+            "name": "bd_pizzeria address",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_address = Origen{[Schema=\"bd_pizzeria\",Item=\"address\"]}[Data]",
+                "in",
+                "    bd_pizzeria_address"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "bd_pizzeria customers",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "cust_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e62b71d0-bc12-4ac0-8f9c-eae43f90d6af",
+            "sourceColumn": "cust_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cust_firstname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "01ca2ce2-2e74-444f-a578-1bc2332e32c7",
+            "sourceColumn": "cust_firstname",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cust_lastname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "030a5008-72d6-4a8c-b89e-ce526ff6c4e0",
+            "sourceColumn": "cust_lastname",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "4782d358-a69b-43b6-b08c-bf182e2c4106",
+        "partitions": [
+          {
+            "name": "bd_pizzeria customers",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_customers = Origen{[Schema=\"bd_pizzeria\",Item=\"customers\"]}[Data]",
+                "in",
+                "    bd_pizzeria_customers"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "bd_pizzeria vista_inicial",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "order_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7599979a-c081-485b-b4fc-8437a5167189",
+            "sourceColumn": "order_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "item_price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-PE\"}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "\"S/\"\\ #,0.00;-\"S/\"\\ #,0.00;\"S/\"\\ #,0.00",
+            "lineageTag": "a7202eec-4cc2-4c89-a4e5-73e27998b882",
+            "sourceColumn": "item_price",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c5a52194-858e-45e8-af4a-cd18f89d860f",
+            "sourceColumn": "quantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "item_cat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6403cbfa-bddb-4f07-9f4b-8083b88c93d1",
+            "sourceColumn": "item_cat",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "item_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e2460cde-c6e4-4f37-b724-36d2fc6e38b7",
+            "sourceColumn": "item_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "created_at",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "f1f21666-abcb-4efa-b547-a2727ceafb72",
+            "sourceColumn": "created_at",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variación",
+                "defaultHierarchy": {
+                  "hierarchy": "Jerarquía de fechas",
+                  "table": "LocalDateTable_aae92810-ddeb-4e85-abab-708ff01881cd"
+                },
+                "isDefault": true,
+                "relationship": "e894e118-93c1-498f-9400-6ac31dabcf77"
+              }
+            ]
+          },
+          {
+            "name": "delivery_address1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c045ff2e-e70d-4430-a840-2b6477536bed",
+            "sourceColumn": "delivery_address1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "delivery_address2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2a6600dc-5040-4185-abaf-34b84c34f902",
+            "sourceColumn": "delivery_address2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "delivery_city",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3e5920bb-10e4-4859-b202-be7bd71e4adc",
+            "sourceColumn": "delivery_city",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "delivery_zipcode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f89c7da2-6400-4ff0-93c4-ca17c26c8f14",
+            "sourceColumn": "delivery_zipcode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "delivery",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "b473a627-b5bc-40c4-a16b-4f02e35a50ca",
+            "sourceColumn": "delivery",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b181d790-736e-41c2-a0c8-3333c56ae7f2",
+        "measures": [
+          {
+            "name": "Ordenes Totales",
+            "expression": "COUNTROWS('bd_pizzeria vista_inicial') ",
+            "formatString": "0",
+            "lineageTag": "0fe36ac8-c804-4477-a9f8-139d037c0242"
+          },
+          {
+            "name": "Total ventas",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-PE\"}"
+              }
+            ],
+            "expression": "SUMX('bd_pizzeria vista_inicial','bd_pizzeria vista_inicial'[quantity] * 'bd_pizzeria vista_inicial'[item_price])",
+            "formatString": "\"S/\"\\ #,0.00;-\"S/\"\\ #,0.00;\"S/\"\\ #,0.00",
+            "lineageTag": "fda148b2-eaeb-4144-843f-6a3c8ea1a1a9"
+          },
+          {
+            "name": "Promedio Valor de Orden",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-PE\"}"
+              }
+            ],
+            "expression": "DIVIDE([Total ventas],[Ordenes Totales],0) ",
+            "formatString": "\"S/\"\\ #,0.00;-\"S/\"\\ #,0.00;\"S/\"\\ #,0.00",
+            "lineageTag": "1a4294a1-d2cb-477e-b443-fa75643ad1e2"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "bd_pizzeria vista_inicial",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_vista_inicial = Origen{[Schema=\"bd_pizzeria\",Item=\"vista_inicial\"]}[Data]",
+                "in",
+                "    bd_pizzeria_vista_inicial"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_aae92810-ddeb-4e85-abab-708ff01881cd",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "ba0bd8be-0519-43cc-88dc-7fd7b84f1d13",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "6903a1cd-a6af-4a0f-a310-d6b05a8d5eff",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "6261f095-200c-4f1d-bdb1-5147669d8fa6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "340e2e49-382d-4487-811c-2bd0e428a10b",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "a504f7ab-5c39-47d3-8e1a-a3db8862ec14",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "98a78c64-8501-4e05-91e3-a69c571638bb",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "9eb5f02d-fc0a-4bc0-a1b7-121231f71fd2",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "5316d8c9-d71c-4019-8e24-06ce3e2f11dd",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "068b97f9-a385-4bf0-8162-74c95bc79f58",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "1e3b3219-7298-4fb8-8527-fe52fe3b2364",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "9bcf712a-19ed-45cc-8643-859a320d9af9",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "6cdf62d1-819c-409f-8cf3-86ed2b9191f7"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "0375f1a6-ee91-4f02-ac24-8bc58bdd8b25",
+        "partitions": [
+          {
+            "name": "LocalDateTable_aae92810-ddeb-4e85-abab-708ff01881cd",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('bd_pizzeria vista_inicial'[created_at])), 1, 1), Date(Year(MAX('bd_pizzeria vista_inicial'[created_at])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "bd_pizzeria ingredient",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ing_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e210bf56-2c0b-494a-80bc-dfd80e36b19f",
+            "sourceColumn": "ing_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ing_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "300ba323-72f5-4853-b3d7-e6dc29046acd",
+            "sourceColumn": "ing_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ing_weight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d1e1cda3-1f11-49bc-8361-9afaed70bcb5",
+            "sourceColumn": "ing_weight",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ing_meas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ecf26332-a1cc-41bb-a82b-08b0f3faaba2",
+            "sourceColumn": "ing_meas",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ing_price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d4d28e1f-0a3f-494e-81f4-72245adc25ed",
+            "sourceColumn": "ing_price",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "df1237fe-5c6e-49ee-8d4d-e2b5f5794fdb",
+        "partitions": [
+          {
+            "name": "bd_pizzeria ingredient",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_ingredient = Origen{[Schema=\"bd_pizzeria\",Item=\"ingredient\"]}[Data]",
+                "in",
+                "    bd_pizzeria_ingredient"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "bd_pizzeria inventory",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "inv_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5cb2bd58-c9d4-4e51-9a06-06b59070b633",
+            "sourceColumn": "inv_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "item_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f13d8ca3-03bb-49b4-93d1-3edf62e7c536",
+            "sourceColumn": "item_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2f84a57b-2fda-4fb9-b551-944cc74b2add",
+            "sourceColumn": "quantity",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "08ca3bda-189d-4ae4-a3f0-231104576e82",
+        "partitions": [
+          {
+            "name": "bd_pizzeria inventory",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_inventory = Origen{[Schema=\"bd_pizzeria\",Item=\"inventory\"]}[Data]",
+                "in",
+                "    bd_pizzeria_inventory"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "bd_pizzeria item",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "item_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e777406f-7477-4aeb-bdfb-520215ee6e58",
+            "sourceColumn": "item_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "sku",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c95ed4a7-1153-4eab-ac6d-c3d764874ce3",
+            "sourceColumn": "sku",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "item_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c9899661-c94d-4b67-88d5-a8d6e3f96c8c",
+            "sourceColumn": "item_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "item_cat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fcafc3d8-a39e-4afc-8452-bb571bddd1a6",
+            "sourceColumn": "item_cat",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "item_size",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bd1b4131-1cfa-4b36-a7f8-d8167162aa6a",
+            "sourceColumn": "item_size",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "item_price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"es-PE\"}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "\"S/\"\\ #,0.00;-\"S/\"\\ #,0.00;\"S/\"\\ #,0.00",
+            "lineageTag": "fd806dd3-9718-41cc-8d12-a93c074903dc",
+            "sourceColumn": "item_price",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "75fbf31b-710e-488c-8bad-7a7561de0d5e",
+        "partitions": [
+          {
+            "name": "bd_pizzeria item",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_item = Origen{[Schema=\"bd_pizzeria\",Item=\"item\"]}[Data]",
+                "in",
+                "    bd_pizzeria_item"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "bd_pizzeria orders",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "order_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "02f4194b-62ce-446c-89aa-d93af9682059",
+            "sourceColumn": "order_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "created_at",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "b3b936a9-e0f2-47c0-876a-17ff7d739164",
+            "sourceColumn": "created_at",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variación",
+                "defaultHierarchy": {
+                  "hierarchy": "Jerarquía de fechas",
+                  "table": "LocalDateTable_f06bcf9b-340f-490d-bf38-3b2504f06313"
+                },
+                "isDefault": true,
+                "relationship": "a96a0d45-b3d5-49be-8d1b-6e1e5478f7da"
+              }
+            ]
+          },
+          {
+            "name": "item_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "213e8137-e756-4e0f-8566-84b5fc8adc89",
+            "sourceColumn": "item_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "57733993-9ab5-4e94-88b5-93b43d42e3fe",
+            "sourceColumn": "quantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "delivery",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "3e903641-2daa-4f38-844d-559e8f58d4fe",
+            "sourceColumn": "delivery",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cust_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "78e80ef0-c95d-4e6a-9179-f578283f2a45",
+            "sourceColumn": "cust_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "add_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1cbdf12b-d8e2-4b7f-b8cb-3d1026437c11",
+            "sourceColumn": "add_id",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "3952316a-b9b1-458e-b392-b6b69dd080f6",
+        "partitions": [
+          {
+            "name": "bd_pizzeria orders",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_orders = Origen{[Schema=\"bd_pizzeria\",Item=\"orders\"]}[Data]",
+                "in",
+                "    bd_pizzeria_orders"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_f06bcf9b-340f-490d-bf38-3b2504f06313",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "9038f6e7-84ad-4774-a9f8-136513576044",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "8eaf4544-f22e-4882-a3bd-37486473c4bb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "2f730f49-8571-4c32-a839-2a99c5b7e549",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "8bdc3385-cfc8-4e6b-b3c9-e3231b79d80b",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "5d161b53-a018-4d8d-a153-7502ea8bab14",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "9befba13-3daf-4142-ae65-b33df186536b",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "552b6df1-4626-4d62-b0db-88e57dd19c95",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "0a26dfac-88a3-4ea3-8a66-157be64e8ef8",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "15e88c77-ce67-4e30-ae36-8eeec9c98b89",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "fae851bc-b6d2-4844-bab4-49c2e72505e6",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "4ec3cf15-0b5e-4df3-9efe-6271deb788c7",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "4f9f2af6-64ef-44d4-a31f-66a27bb98ae2"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "66e98019-ac5f-4aef-8e3c-948d419879aa",
+        "partitions": [
+          {
+            "name": "LocalDateTable_f06bcf9b-340f-490d-bf38-3b2504f06313",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('bd_pizzeria orders'[created_at])), 1, 1), Date(Year(MAX('bd_pizzeria orders'[created_at])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "bd_pizzeria recipe",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "row_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "76564415-0583-423d-93c5-eaf69d5ace64",
+            "sourceColumn": "row_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "recipe_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "43f9c647-5a2b-491e-b7b9-721336afbf9f",
+            "sourceColumn": "recipe_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ing_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "23519eec-995f-4af9-84e1-5dd56ae2f682",
+            "sourceColumn": "ing_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4f573638-0e85-4d9d-a12f-197f4232cf60",
+            "sourceColumn": "quantity",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "78e91c7a-652c-40f4-9655-617930b6237b",
+        "partitions": [
+          {
+            "name": "bd_pizzeria recipe",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_recipe = Origen{[Schema=\"bd_pizzeria\",Item=\"recipe\"]}[Data]",
+                "in",
+                "    bd_pizzeria_recipe"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "bd_pizzeria rota",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "row_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "70604f03-b127-4e72-bbbc-ea3009f5a142",
+            "sourceColumn": "row_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "rota_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ac766fe6-e84c-447f-b9b2-b90fe9ea9c4c",
+            "sourceColumn": "rota_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "0f498264-e9d1-4061-aa67-fa24afbbfd9e",
+            "sourceColumn": "date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variación",
+                "defaultHierarchy": {
+                  "hierarchy": "Jerarquía de fechas",
+                  "table": "LocalDateTable_2c9865a4-b45f-4d70-ab48-bafac7eaf8e4"
+                },
+                "isDefault": true,
+                "relationship": "5a268971-3e3b-4361-985a-05bb3631146a"
+              }
+            ]
+          },
+          {
+            "name": "shift_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "92ba232a-a3fe-4176-a83c-9768427ef2c8",
+            "sourceColumn": "shift_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "staff_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e6141da8-3941-4f2c-bd0b-3b9104e7dab3",
+            "sourceColumn": "staff_id",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "23eb3f03-3289-4d11-a581-b3a72abc7aaf",
+        "partitions": [
+          {
+            "name": "bd_pizzeria rota",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_rota = Origen{[Schema=\"bd_pizzeria\",Item=\"rota\"]}[Data]",
+                "in",
+                "    bd_pizzeria_rota"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_2c9865a4-b45f-4d70-ab48-bafac7eaf8e4",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "2e697a28-b2a0-4506-922a-a18f99a11a6b",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "ae77b4a3-537d-44c8-902b-f49bf3ab1167",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "4cace040-6a2f-409a-821c-53dbddaf4b30",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "c568bd3d-4e37-4eaf-855f-e847b7fb30af",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "607af89a-9f9a-4c86-b0e1-e951bb5b582b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "63b3e8ef-399c-4d03-8e49-09eb2a0ce7c0",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "11b1ab9e-e1fd-48fa-953e-d852558656c2",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "8fbfa1ec-ce25-46b7-b18e-92827b77e349",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "313dad99-5612-4886-bda0-32ed3488ff57",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "eae3b7f0-cb5c-4d9f-bf69-3e349912eb47",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "722b2230-bae0-4167-a83f-52566de3e0de",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "3ebab31c-2840-4a4b-ab86-6371a0e10b33"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "5ac14dc2-132b-488b-b0d1-818643845d7a",
+        "partitions": [
+          {
+            "name": "LocalDateTable_2c9865a4-b45f-4d70-ab48-bafac7eaf8e4",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('bd_pizzeria rota'[date])), 1, 1), Date(Year(MAX('bd_pizzeria rota'[date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "bd_pizzeria staff",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "staff_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b9c433fd-3c6a-485d-9ec6-4248c8a42fc4",
+            "sourceColumn": "staff_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "first_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4662fb0e-361f-49b9-9856-a65385b2b140",
+            "sourceColumn": "first_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "last_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b235d2cf-4987-4e34-9271-c1caa60e29d3",
+            "sourceColumn": "last_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "position",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d73b3392-eda7-461a-bbf4-a0988fc3bdbc",
+            "sourceColumn": "position",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hourly_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "9bc3369f-f052-4b60-9941-b8f20497bb91",
+            "sourceColumn": "hourly_rate",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "75af4ef1-60fa-45f8-8479-85a87a0c6726",
+        "partitions": [
+          {
+            "name": "bd_pizzeria staff",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_staff = Origen{[Schema=\"bd_pizzeria\",Item=\"staff\"]}[Data]",
+                "in",
+                "    bd_pizzeria_staff"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "bd_pizzeria stock2",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ing_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "df079f25-b60e-4ed1-938f-5236e2d150c6",
+            "sourceColumn": "ing_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ordered_weight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "34f7ca72-ea52-498a-942a-a89ff5024335",
+            "sourceColumn": "ordered_weight",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "total_inv_weight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c915a9f1-89ea-4bee-9ae8-06e9d298f53b",
+            "sourceColumn": "total_inv_weight",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "remaining_weight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "4c1b4f77-35bb-46e9-93b0-8550aedd0b3e",
+            "sourceColumn": "remaining_weight",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "16d774b3-086c-4f28-aaed-29c515b91a86",
+        "measures": [
+          {
+            "name": "Porcentaje_Restante",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUMX('bd_pizzeria stock2', 'bd_pizzeria stock2'[total_inv_weight] - 'bd_pizzeria stock2'[ordered_weight]),",
+              "    SUMX('bd_pizzeria stock2', 'bd_pizzeria stock2'[total_inv_weight])",
+              ") ",
+              "",
+              ""
+            ],
+            "formatString": "0\\ %;-0\\ %;0\\ %",
+            "lineageTag": "28882f3c-b4ee-400d-a666-9c01c5cb34db"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "bd_pizzeria stock2",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_stock2 = Origen{[Schema=\"bd_pizzeria\",Item=\"stock2\"]}[Data]",
+                "in",
+                "    bd_pizzeria_stock2"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "bd_pizzeria shift",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "shift_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "263c402a-68a8-48ff-b897-82eac1bfd016",
+            "sourceColumn": "shift_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "day_of_week",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "69d27ad3-9a98-49f9-88cb-b4509696f2ee",
+            "sourceColumn": "day_of_week",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "start_time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "5d46dc8f-1a76-4fa3-8539-0e2dc7f6a412",
+            "sourceColumn": "start_time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "end_time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "4cc56976-a86d-4d50-a765-16ab26b2011d",
+            "sourceColumn": "end_time",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "06e914db-a815-4f65-93e5-2e10321cbf6a",
+        "partitions": [
+          {
+            "name": "bd_pizzeria shift",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = MySQL.Database(\"localhost:3306\", \"bd_pizzeria\", [ReturnSingleDatabase=true]),",
+                "    bd_pizzeria_shift = Origen{[Schema=\"bd_pizzeria\",Item=\"shift\"]}[Data]",
+                "in",
+                "    bd_pizzeria_shift"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

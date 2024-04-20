@@ -1,0 +1,234 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.49\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Lienzo19879364035309841.jpg",
+            "path": "Lienzo19879364035309841.jpg",
+            "type": 100
+          },
+          {
+            "name": "Lienzo24555596299051059.jpg",
+            "path": "Lienzo24555596299051059.jpg",
+            "type": 100
+          },
+          {
+            "name": "Lienzo3600469927366647.jpg",
+            "path": "Lienzo3600469927366647.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Lienzo1.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Lienzo19879364035309841.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0efbe71792332577f10b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":998.3414634146342,\"y\":129.07317073170734,\"z\":1000,\"width\":270.4390243902439,\"height\":130.82926829268294,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"bd_pizzeria vista_inicial.Total ventas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total ventas\"},\"Name\":\"bd_pizzeria vista_inicial.Total ventas\",\"NativeReferenceName\":\"Total ventas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total ventas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ventas Totales'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 130.83,
+          "width": 270.44,
+          "x": 998.34,
+          "y": 129.07,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"371d24cbdf774a710a86\",\"layouts\":[{\"id\":0,\"position\":{\"x\":722.6341463414634,\"y\":388.9756097560976,\"z\":4000,\"width\":551.4146341463415,\"height\":280.9756097560976,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"bd_pizzeria vista_inicial.item_name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(bd_pizzeria vista_inicial.quantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"item_name\"},\"Name\":\"bd_pizzeria vista_inicial.item_name\",\"NativeReferenceName\":\"item_name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"quantity\"}},\"Function\":0},\"Name\":\"Sum(bd_pizzeria vista_inicial.quantity)\",\"NativeReferenceName\":\"Suma de quantity\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"quantity\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 5 de productos más vendidos'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"bd_pizzeria vista_inicial\"}},\"Property\":\"item_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"item_name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"quantity\"}},\"Function\":0}}}],\"Top\":4}}},\"Type\":2},{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"item_name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 280.98,
+          "width": 551.41,
+          "x": 722.63,
+          "y": 388.98,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"574081182bc478bf73e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":751.609756097561,\"y\":135.21951219512195,\"z\":5000,\"width\":208.09756097560975,\"height\":140.4878048780488,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"bd_pizzeria vista_inicial.order_id\"},{\"queryRef\":\"Sum(bd_pizzeria vista_inicial.quantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"order_id\"},\"Name\":\"bd_pizzeria vista_inicial.order_id\",\"NativeReferenceName\":\"order_id\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"quantity\"}},\"Function\":0},\"Name\":\"Sum(bd_pizzeria vista_inicial.quantity)\",\"NativeReferenceName\":\"Suma de quantity\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"order_id\"}}}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 140.49,
+          "width": 208.10,
+          "x": 751.61,
+          "y": 135.22,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"5c56b141e8d7f15b8047\",\"layouts\":[{\"id\":0,\"position\":{\"x\":410.9268292682927,\"y\":388.9756097560976,\"z\":6000,\"width\":283.609756097561,\"height\":280.9756097560976,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"bd_pizzeria vista_inicial.Total ventas\"}],\"Category\":[{\"queryRef\":\"bd_pizzeria vista_inicial.created_at.Variación.Jerarquía de fechas.Mes\",\"active\":true},{\"queryRef\":\"bd_pizzeria vista_inicial.created_at.Variación.Jerarquía de fechas.Día\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total ventas\"},\"Name\":\"bd_pizzeria vista_inicial.Total ventas\",\"NativeReferenceName\":\"Total ventas\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variación\",\"Property\":\"created_at\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"bd_pizzeria vista_inicial.created_at.Variación.Jerarquía de fechas.Mes\",\"NativeReferenceName\":\"created_at Mes\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Name\":\"Variación\",\"Property\":\"created_at\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Día\"},\"Name\":\"bd_pizzeria vista_inicial.created_at.Variación.Jerarquía de fechas.Día\",\"NativeReferenceName\":\"created_at Día\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total ventas por día el mes de Enero'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 280.98,
+          "width": 283.61,
+          "x": 410.93,
+          "y": 388.98,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"660c99463bb1b3caf5b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":130.82926829268294,\"z\":3000,\"width\":334.5365853658537,\"height\":258.1463414634147,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"bd_pizzeria vista_inicial.item_cat\",\"active\":true}],\"Y\":[{\"queryRef\":\"bd_pizzeria vista_inicial.Total ventas\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"item_cat\"},\"Name\":\"bd_pizzeria vista_inicial.item_cat\",\"NativeReferenceName\":\"item_cat\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total ventas\"},\"Name\":\"bd_pizzeria vista_inicial.Total ventas\",\"NativeReferenceName\":\"Total ventas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total ventas\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'inside'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"background\":{\"expr\":{\"Literal\":{\"Value\":\"'off'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Percent of total'\"}}}}},{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"bd_pizzeria vista_inicial\"}},\"Property\":\"item_cat\"}},\"Right\":{\"Literal\":{\"Value\":\"'Bebida'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"bd_pizzeria vista_inicial\"}},\"Property\":\"item_cat\"}},\"Right\":{\"Literal\":{\"Value\":\"'Postre'\"}}}}}]}}],\"legend\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'categoria'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total ventas por Categoría'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 258.15,
+          "width": 334.54,
+          "x": 0.00,
+          "y": 130.83,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c628b190b40d1e6ea136\",\"layouts\":[{\"id\":0,\"position\":{\"x\":259.0243902439025,\"y\":14.048780487804878,\"z\":8000,\"width\":830.6341463414634,\"height\":74.63414634146342,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Reporte de Ventas Pizzería\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 74.63,
+          "width": 830.63,
+          "x": 259.02,
+          "y": 14.05,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"e96f5e0f87df3a4f6815\",\"layouts\":[{\"id\":0,\"position\":{\"x\":611.1219512195122,\"y\":130.82926829268294,\"z\":0,\"width\":166.82926829268294,\"height\":130.82926829268294,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"bd_pizzeria vista_inicial.Ordenes Totales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Ordenes Totales\"},\"Name\":\"bd_pizzeria vista_inicial.Ordenes Totales\",\"NativeReferenceName\":\"Ordenes Totales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Ordenes Totales\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"47D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Ordenes'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 130.83,
+          "width": 166.83,
+          "x": 611.12,
+          "y": 130.83,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e97f681a84942e9f2686\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":388.9756097560976,\"z\":7000,\"width\":368.7804878048781,\"height\":280.9756097560976,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"bd_pizzeria vista_inicial.delivery\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(bd_pizzeria vista_inicial.order_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"delivery\"},\"Name\":\"bd_pizzeria vista_inicial.delivery\",\"NativeReferenceName\":\"delivery\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"order_id\"}},\"Function\":5},\"Name\":\"CountNonNull(bd_pizzeria vista_inicial.order_id)\",\"NativeReferenceName\":\"Recuento de order_id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"order_id\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":-0.25}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"bd_pizzeria vista_inicial\"}},\"Property\":\"delivery\"}},\"Right\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"bd_pizzeria vista_inicial\"}},\"Property\":\"delivery\"}},\"Right\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}],\"labels\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'outside'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Metodos de Entrega'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 280.98,
+          "width": 368.78,
+          "x": 0.00,
+          "y": 388.98,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"ece6f226095b4fea9cb2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":360,\"y\":130.82926829268294,\"z\":2000,\"width\":261.6585365853659,\"height\":130.82926829268294,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"bd_pizzeria vista_inicial.Promedio Valor de Orden\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria vista_inicial\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Promedio Valor de Orden\"},\"Name\":\"bd_pizzeria vista_inicial.Promedio Valor de Orden\",\"NativeReferenceName\":\"Promedio Valor de Orden\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Promedio Valor de Orden\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Valor promedio por Orden'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 130.83,
+          "width": 261.66,
+          "x": 360.00,
+          "y": 130.83,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Lienzo3.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Lienzo3600469927366647.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Página 3",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection749b7bb5e73e5c78a488",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"446bdeec4bced5db46d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":500.4878048780488,\"y\":124.6829268292683,\"z\":2,\"width\":298.5365853658537,\"height\":90.4390243902439,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(bd_pizzeria staff.staff_id)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria staff\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"staff_id\"}},\"Function\":2},\"Name\":\"Min(bd_pizzeria staff.staff_id)\",\"NativeReferenceName\":\"Recuento de staff_id\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"staff_id\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Colaboradores'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.44,
+          "width": 298.54,
+          "x": 500.49,
+          "y": 124.68,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"940870ed4a5a666099fc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":374.9268292682927,\"y\":265.1707317073171,\"z\":0,\"width\":566.3414634146342,\"height\":399.5121951219512,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"bd_pizzeria staff.first_name\"},{\"queryRef\":\"bd_pizzeria shift.day_of_week\"},{\"queryRef\":\"bd_pizzeria shift.start_time\"},{\"queryRef\":\"bd_pizzeria shift.end_time\"},{\"queryRef\":\"bd_pizzeria staff.hourly_rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria staff\",\"Type\":0},{\"Name\":\"b1\",\"Entity\":\"bd_pizzeria shift\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"first_name\"},\"Name\":\"bd_pizzeria staff.first_name\",\"NativeReferenceName\":\"first_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"start_time\"},\"Name\":\"bd_pizzeria shift.start_time\",\"NativeReferenceName\":\"start_time\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"end_time\"},\"Name\":\"bd_pizzeria shift.end_time\",\"NativeReferenceName\":\"end_time\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"hourly_rate\"},\"Name\":\"bd_pizzeria staff.hourly_rate\",\"NativeReferenceName\":\"hourly_rate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b1\"}},\"Property\":\"day_of_week\"},\"Name\":\"bd_pizzeria shift.day_of_week\",\"NativeReferenceName\":\"day_of_week\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"117.14397059573334D\"}}}},\"selector\":{\"metadata\":\"bd_pizzeria shift.end_time\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"128.87839817287758D\"}}}},\"selector\":{\"metadata\":\"bd_pizzeria shift.start_time\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"113.82372889740894D\"}}}},\"selector\":{\"metadata\":\"bd_pizzeria staff.first_name\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Horario'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 399.51,
+          "width": 566.34,
+          "x": 374.93,
+          "y": 265.17,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"ceba9829ebc00d0e8441\",\"layouts\":[{\"id\":0,\"position\":{\"x\":471.7325227963526,\"y\":14.589665653495441,\"z\":1,\"width\":422.1276595744681,\"height\":84.62006079027356,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Colaboradores\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 84.62,
+          "width": 422.13,
+          "x": 471.73,
+          "y": 14.59,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Lienzo2.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Lienzo24555596299051059.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Página 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionad73d2abf5859cd9e496",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0a0215ae5e84b2ec447d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":506.63414634146346,\"y\":278.3414634146342,\"z\":3000,\"width\":290.6341463414634,\"height\":352.0975609756098,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"bd_pizzeria item.item_name\"},{\"queryRef\":\"bd_pizzeria item.item_price\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria item\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"item_name\"},\"Name\":\"bd_pizzeria item.item_name\",\"NativeReferenceName\":\"Producto\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"item_price\"},\"Name\":\"bd_pizzeria item.item_price\",\"NativeReferenceName\":\"Precio\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"item_price\"}}}]},\"columnProperties\":{\"bd_pizzeria item.item_name\":{\"displayName\":\"Producto\"},\"bd_pizzeria item.item_price\":{\"displayName\":\"Precio\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"bd_pizzeria item\"}},\"Property\":\"item_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria item\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"item_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Pizza'\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{}}]},\"isHiddenInViewMode\":false}]",
+          "height": 352.10,
+          "width": 290.63,
+          "x": 506.63,
+          "y": 278.34,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"1a3f1a61cbb8bf4ff170\",\"layouts\":[{\"id\":0,\"position\":{\"x\":474.1463414634147,\"y\":108.87804878048782,\"z\":2000,\"width\":312.5853658536586,\"height\":127.31707317073172,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(bd_pizzeria stock1.ingredient_cost)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria stock1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ingredient_cost\"}},\"Function\":0},\"Name\":\"Sum(bd_pizzeria stock1.ingredient_cost)\",\"NativeReferenceName\":\"Suma de ingredient_cost\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ingredient_cost\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Costo Total de Ingredientes'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 127.32,
+          "width": 312.59,
+          "x": 474.15,
+          "y": 108.88,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"7a05fea75417befe4e23\",\"layouts\":[{\"id\":0,\"position\":{\"x\":484.6829268292683,\"y\":0,\"z\":0,\"width\":312.5853658536586,\"height\":73.75609756097562,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Inventario\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 73.76,
+          "width": 312.59,
+          "x": 484.68,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"99fc25e9373bd4cd2d86\",\"layouts\":[{\"id\":0,\"position\":{\"x\":784.9756097560976,\"y\":278.3414634146342,\"z\":4000,\"width\":492.5853658536586,\"height\":358.2439024390244,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"bd_pizzeria stock2.ing_name\"},{\"queryRef\":\"Sum(bd_pizzeria stock2.total_inv_weight)\"},{\"queryRef\":\"Sum(bd_pizzeria stock2.ordered_weight)\"},{\"queryRef\":\"bd_pizzeria stock2.Porcentaje_Restante\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria stock2\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ing_name\"},\"Name\":\"bd_pizzeria stock2.ing_name\",\"NativeReferenceName\":\"Ingrediente\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"total_inv_weight\"}},\"Function\":0},\"Name\":\"Sum(bd_pizzeria stock2.total_inv_weight)\",\"NativeReferenceName\":\"Total Inventario\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ordered_weight\"}},\"Function\":0},\"Name\":\"Sum(bd_pizzeria stock2.ordered_weight)\",\"NativeReferenceName\":\"Peso Total de ordenes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Porcentaje_Restante\"},\"Name\":\"bd_pizzeria stock2.Porcentaje_Restante\",\"NativeReferenceName\":\"Porcentaje inventario\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Porcentaje_Restante\"}}}]},\"columnProperties\":{\"Sum(bd_pizzeria stock2.total_inv_weight)\":{\"displayName\":\"Total Inventario\"},\"Sum(bd_pizzeria stock2.ordered_weight)\":{\"displayName\":\"Peso Total de ordenes\"},\"bd_pizzeria stock2.ing_name\":{\"displayName\":\"Ingrediente\"},\"bd_pizzeria stock2.Porcentaje_Restante\":{\"displayName\":\"Porcentaje inventario\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"82.13372719969881D\"}}}},\"selector\":{\"metadata\":\"Sum(bd_pizzeria stock2.ordered_weight)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"126.00001190929484D\"}}}},\"selector\":{\"metadata\":\"bd_pizzeria stock2.ing_name\"}}],\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"bd_pizzeria stock2\"}},\"Property\":\"Porcentaje_Restante\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#F04800'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'midColor'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#6AF104'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"bd_pizzeria stock2.Porcentaje_Restante\"}}],\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 358.24,
+          "width": 492.59,
+          "x": 784.98,
+          "y": 278.34,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f112ea67da67c3f5cf61\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.80487804878049,\"y\":280.9756097560976,\"z\":1000,\"width\":457.4634146341464,\"height\":359.1219512195122,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"bd_pizzeria stock1.ing_name\"},{\"queryRef\":\"Sum(bd_pizzeria stock1.ingredient_cost)\"},{\"queryRef\":\"Sum(bd_pizzeria stock1.recipe_quantity_total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bd_pizzeria stock1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ing_name\"},\"Name\":\"bd_pizzeria stock1.ing_name\",\"NativeReferenceName\":\"Ingrediente\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ingredient_cost\"}},\"Function\":0},\"Name\":\"Sum(bd_pizzeria stock1.ingredient_cost)\",\"NativeReferenceName\":\"Costo\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"recipe_quantity_total\"}},\"Function\":0},\"Name\":\"Sum(bd_pizzeria stock1.recipe_quantity_total)\",\"NativeReferenceName\":\"Suma de recipe_quantity_total\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ing_name\"}}}]},\"columnProperties\":{\"Sum(bd_pizzeria stock1.ingredient_cost)\":{\"displayName\":\"Costo\"},\"Sum(bd_pizzeria stock1.recipe_quantity_total)\":{\"displayName\":\"Peso Total de ordenes\"},\"bd_pizzeria stock1.ing_name\":{\"displayName\":\"Ingrediente\"}},\"queryOptions\":{\"keepProjectionOrder\":true},\"showAllRoles\":[\"Values\"],\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"133.02438545113506D\"}}}},\"selector\":{\"metadata\":\"bd_pizzeria stock1.ing_name\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 359.12,
+          "width": 457.46,
+          "x": 51.80,
+          "y": 280.98,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

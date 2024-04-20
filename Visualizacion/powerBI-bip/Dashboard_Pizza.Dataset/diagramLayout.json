@@ -1,0 +1,191 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 1433.204924614874,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 453.57393684030041,
+            "y": 330.02391941014156
+          },
+          "nodeIndex": "bd_pizzeria address",
+          "nodeLineageTag": "a0a9bb04-0c5f-4423-af6d-b27e072127c4",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 580.843285199514,
+            "y": -10
+          },
+          "nodeIndex": "bd_pizzeria customers",
+          "nodeLineageTag": "4782d358-a69b-43b6-b08c-bf182e2c4106",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2001.204924614874,
+            "y": 160.01195970507075
+          },
+          "nodeIndex": "bd_pizzeria ingredient",
+          "nodeLineageTag": "df1237fe-5c6e-49ee-8d4d-e2b5f5794fdb",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2275.204924614874,
+            "y": 194.01195970507075
+          },
+          "nodeIndex": "bd_pizzeria inventory",
+          "nodeLineageTag": "08ca3bda-189d-4ae4-a3f0-231104576e82",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 295.43525013803617
+          },
+          "nodeIndex": "bd_pizzeria item",
+          "nodeLineageTag": "75fbf31b-710e-488c-8bad-7a7561de0d5e",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 295.2759736546119,
+            "y": 29.09870235427087
+          },
+          "nodeIndex": "bd_pizzeria orders",
+          "nodeLineageTag": "3952316a-b9b1-458e-b392-b6b69dd080f6",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1717.204924614874,
+            "y": 172.01195970507075
+          },
+          "nodeIndex": "bd_pizzeria recipe",
+          "nodeLineageTag": "78e91c7a-652c-40f4-9655-617930b6237b",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1149.0280363801439,
+            "y": 168.8169088001824
+          },
+          "nodeIndex": "bd_pizzeria rota",
+          "nodeLineageTag": "23eb3f03-3289-4d11-a581-b3a72abc7aaf",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 864.84328519951407,
+            "y": 149.88201797752421
+          },
+          "nodeIndex": "bd_pizzeria staff",
+          "nodeLineageTag": "75af4ef1-60fa-45f8-8479-85a87a0c6726",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2559.204924614874,
+            "y": 120.01195970507075
+          },
+          "nodeIndex": "bd_pizzeria stock1",
+          "nodeLineageTag": "d6e4325a-fab1-4a58-b975-4f680f3b5f1d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2843.204924614874,
+            "y": 120.01195970507075
+          },
+          "nodeIndex": "bd_pizzeria vista_inicial",
+          "nodeLineageTag": "b181d790-736e-41c2-a0c8-3333c56ae7f2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3117.204924614874,
+            "y": 182.01195970507081
+          },
+          "nodeIndex": "bd_pizzeria stock2",
+          "nodeLineageTag": "16d774b3-086c-4f28-aaed-29c515b91a86",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3391.204924614874,
+            "y": 182.01195970507081
+          },
+          "nodeIndex": "bd_pizzeria shift",
+          "nodeLineageTag": "06e914db-a815-4f65-93e5-2e10321cbf6a",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}
